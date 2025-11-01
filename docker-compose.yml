@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: mountain-revival-centre
+    ports:
+      - "80"
+    restart: unless-stopped
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    networks:
+      - mountain-revival-network
+
+networks:
+  mountain-revival-network:
+    driver: bridge

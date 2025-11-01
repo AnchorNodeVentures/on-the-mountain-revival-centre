@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enroll at On The Mountain Revival Centre - 2026 Intake Now Open">
+    <title>Enrollment Application | On The Mountain Revival Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="mountainonrevalcentrelogo-removebg.png" alt="On The Mountain Revival Centre Logo">
+                    <span class="logo-text">On The Mountain Revival Centre</span>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="facilities.html">Our Facilities</a></li>
+                    <li><a href="enrollment.html" class="active cta-nav">Enrol Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Apply for 2026 Intake</h1>
+            <p>Begin your journey to ministry with our SAQA accredited programs</p>
+        </div>
+    </section>
+
+    <!-- Enrollment Information -->
+    <section class="enrollment-info">
+        <div class="container">
+            <div class="info-box">
+                <h2>Before You Apply</h2>
+                <p>Please ensure you have the following information ready:</p>
+                <ul>
+                    <li>Valid South African ID or Passport number</li>
+                    <li>Educational background and qualifications</li>
+                    <li>Church affiliation and pastoral reference details</li>
+                    <li>Ministry experience (if applicable)</li>
+                    <li>Emergency contact information</li>
+                    <li>Accommodation preferences for contact sessions</li>
+                </ul>
+                <p class="note"><strong>Note:</strong> All fields marked with <span class="required">*</span> are required. The application process typically takes 10-15 minutes to complete.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form -->
+    <section class="enrollment-form-section">
+        <div class="container">
+            <form id="enrollmentForm" class="enrollment-form" action="#" method="POST">
+
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="idNumber">ID/Passport Number <span class="required">*</span></label>
+                            <input type="text" id="idNumber" name="idNumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required">*</span></label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality <span class="required">*</span></label>
+                            <input type="text" id="nationality" name="nationality" value="South African" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Contact Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+27" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="alternatePhone">Alternate Phone Number</label>
+                            <input type="tel" id="alternatePhone" name="alternatePhone" placeholder="+27">
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="+27">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Residential Address <span class="required">*</span></label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City/Town <span class="required">*</span></label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="province">Province <span class="required">*</span></label>
+                            <select id="province" name="province" required>
+                                <option value="">Select...</option>
+                                <option value="eastern-cape">Eastern Cape</option>
+                                <option value="free-state">Free State</option>
+                                <option value="gauteng">Gauteng</option>
+                                <option value="kwazulu-natal">KwaZulu-Natal</option>
+                                <option value="limpopo">Limpopo</option>
+                                <option value="mpumalanga">Mpumalanga</option>
+                                <option value="northern-cape">Northern Cape</option>
+                                <option value="north-west">North West</option>
+                                <option value="western-cape">Western Cape</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="postalCode">Postal Code <span class="required">*</span></label>
+                            <input type="text" id="postalCode" name="postalCode" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program Selection -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Program Selection</h3>
+                    <div class="form-group">
+                        <label for="program">Desired Program <span class="required">*</span></label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program...</option>
+                            <option value="certificate">Certificate in Ministry</option>
+                            <option value="diploma">Diploma in Ministry</option>
+                            <option value="associate">Associate Degree in Ministry</option>
+                            <option value="degree">Degree in Divinity</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="intakeYear">Intended Intake Year <span class="required">*</span></label>
+                        <select id="intakeYear" name="intakeYear" required>
+                            <option value="">Select...</option>
+                            <option value="2026" selected>2026</option>
+                            <option value="2027">2027</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="studyMode">Preferred Study Mode <span class="required">*</span></label>
+                        <select id="studyMode" name="studyMode" required>
+                            <option value="">Select...</option>
+                            <option value="full-time">Full-time (with residential sessions)</option>
+                            <option value="part-time">Part-time (contact sessions)</option>
+                            <option value="distance">Distance learning with periodic contact sessions</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Educational Background -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Educational Background</h3>
+                    <div class="form-group">
+                        <label for="highestQualification">Highest Educational Qualification <span class="required">*</span></label>
+                        <select id="highestQualification" name="highestQualification" required>
+                            <option value="">Select...</option>
+                            <option value="matric">Grade 12 / Matric</option>
+                            <option value="certificate">Certificate</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="degree">Degree</option>
+                            <option value="honours">Honours Degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="institution">Institution/School Name</label>
+                            <input type="text" id="institution" name="institution">
+                        </div>
+                        <div class="form-group">
+                            <label for="yearCompleted">Year Completed</label>
+                            <input type="number" id="yearCompleted" name="yearCompleted" min="1950" max="2026">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="previousTheological">Previous Theological Studies</label>
+                        <textarea id="previousTheological" name="previousTheological" rows="3" placeholder="Please describe any previous Bible college, seminary, or theological training..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Ministry Experience & Church Affiliation -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Ministry Experience & Church Affiliation</h3>
+                    <div class="form-group">
+                        <label for="churchName">Current Church Name <span class="required">*</span></label>
+                        <input type="text" id="churchName" name="churchName" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pastorName">Pastor's Name <span class="required">*</span></label>
+                            <input type="text" id="pastorName" name="pastorName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pastorPhone">Pastor's Contact Number <span class="required">*</span></label>
+                            <input type="tel" id="pastorPhone" name="pastorPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="churchDenomination">Denomination/Affiliation</label>
+                        <input type="text" id="churchDenomination" name="churchDenomination" placeholder="e.g., Apostolic Faith Mission, Baptist, Pentecostal, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="membershipYears">Years of Church Membership <span class="required">*</span></label>
+                        <select id="membershipYears" name="membershipYears" required>
+                            <option value="">Select...</option>
+                            <option value="less-1">Less than 1 year</option>
+                            <option value="1-3">1-3 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5-10">5-10 years</option>
+                            <option value="10+">More than 10 years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ministryExperience">Current Ministry Involvement <span class="required">*</span></label>
+                        <textarea id="ministryExperience" name="ministryExperience" rows="4" placeholder="Describe your current or previous ministry roles (e.g., youth leader, worship team, preaching, teaching, outreach, etc.)" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Are you currently in ministry leadership? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="ministryLeader" value="yes" required>
+                                <span>Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="ministryLeader" value="no" required>
+                                <span>No</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="ministryLeader" value="aspiring" required>
+                                <span>Aspiring</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Camping & Accommodation -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Accommodation & Campus Preferences</h3>
+                    <p class="section-description">Our campus is located at a mountain retreat camping facility. Please indicate your accommodation needs for contact sessions.</p>
+
+                    <div class="form-group">
+                        <label for="accommodationType">Preferred Accommodation Type <span class="required">*</span></label>
+                        <select id="accommodationType" name="accommodationType" required>
+                            <option value="">Select...</option>
+                            <option value="camping-tent">Camping (bring own tent)</option>
+                            <option value="camping-cabin">Rustic cabin</option>
+                            <option value="dormitory">Dormitory style</option>
+                            <option value="private-room">Private room (limited availability)</option>
+                            <option value="commute">I will commute daily</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Accommodation Needs</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="accommodationNeeds" value="accessibility">
+                                <span>Accessibility/mobility assistance required</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="accommodationNeeds" value="family">
+                                <span>Family accommodation needed</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="accommodationNeeds" value="medical">
+                                <span>Medical considerations</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dietaryRequirements">Dietary Requirements/Allergies</label>
+                        <textarea id="dietaryRequirements" name="dietaryRequirements" rows="3" placeholder="Please list any dietary restrictions, allergies, or special meal requirements..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Emergency Contact Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emergencyName">Emergency Contact Name <span class="required">*</span></label>
+                            <input type="text" id="emergencyName" name="emergencyName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencyRelationship">Relationship <span class="required">*</span></label>
+                            <input type="text" id="emergencyRelationship" name="emergencyRelationship" placeholder="e.g., Spouse, Parent, Sibling" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emergencyPhone">Emergency Contact Phone <span class="required">*</span></label>
+                            <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emergencyEmail">Emergency Contact Email</label>
+                            <input type="email" id="emergencyEmail" name="emergencyEmail">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Additional Information</h3>
+                    <div class="form-group">
+                        <label for="hearAboutUs">How did you hear about us? <span class="required">*</span></label>
+                        <select id="hearAboutUs" name="hearAboutUs" required>
+                            <option value="">Select...</option>
+                            <option value="pastor">My pastor/church leader</option>
+                            <option value="friend">Friend or family member</option>
+                            <option value="social-media">Social media</option>
+                            <option value="website">Website search</option>
+                            <option value="excel">Excel Theological Training Academy</option>
+                            <option value="advertisement">Advertisement/Flyer</option>
+                            <option value="event">Church event/conference</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to study at On The Mountain Revival Centre? <span class="required">*</span></label>
+                        <textarea id="motivation" name="motivation" rows="5" placeholder="Share your calling, vision, and what you hope to achieve through this training..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="testimony">Personal Testimony (Optional)</label>
+                        <textarea id="testimony" name="testimony" rows="5" placeholder="We'd love to hear about your journey of faith and how God has called you to ministry..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="questions">Questions or Additional Comments</label>
+                        <textarea id="questions" name="questions" rows="3" placeholder="Any questions about the program, campus, or enrollment process?"></textarea>
+                    </div>
+                </div>
+
+                <!-- Financial Information -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Financial Information</h3>
+                    <div class="form-group">
+                        <label>How do you plan to finance your studies? <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" value="self-funded">
+                                <span>Self-funded</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" value="church-sponsored">
+                                <span>Church-sponsored</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" value="bursary">
+                                <span>Applying for bursary</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" value="payment-plan">
+                                <span>Payment plan</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="financing" value="other">
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Declaration -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Declaration</h3>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label declaration">
+                                <input type="checkbox" name="declaration" id="declaration" required>
+                                <span>I hereby declare that all the information provided in this application is true and correct to the best of my knowledge. I understand that any false information may result in the cancellation of my application or enrollment. <span class="required">*</span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" id="privacy" required>
+                                <span>I consent to On The Mountain Revival Centre processing my personal information for enrollment and academic purposes in accordance with POPIA. <span class="required">*</span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary-large">Submit Application</button>
+                    <p class="submit-note">After submission, you will receive a confirmation email with next steps. Our admissions team will contact you within 3-5 business days.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="enrollment-contact">
+        <div class="container">
+            <div class="contact-box">
+                <h3>Need Assistance?</h3>
+                <p>If you have any questions about the enrollment process or need help completing this form, please contact us:</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Pieter Trollip</strong>
+                        <p><a href="tel:+27621242113">+27 62 124 2113</a></p>
+                        <p><a href="mailto:pieter@mountainrevivalcentre.co.za">pieter@mountainrevivalcentre.co.za</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="mountainonrevalcentrelogo-removebg.png" alt="Logo" class="footer-logo">
+                    <p>Equipping and empowering leaders through transformative training.</p>
+                    <div class="partner-logo">
+                        <p><strong>In partnership with:</strong></p>
+                        <p>Excel Theological Training Academy</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="enrollment.html">Enrollment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="programs.html#certificate">Certificate in Ministry</a></li>
+                        <li><a href="programs.html#diploma">Diploma in Ministry</a></li>
+                        <li><a href="programs.html#associate">Associate Degree</a></li>
+                        <li><a href="programs.html#degree">Degree in Divinity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Pieter Trollip</li>
+                        <li><a href="tel:+27621242113">+27 62 124 2113</a></li>
+                        <li><a href="mailto:pieter@mountainrevivalcentre.co.za">pieter@mountainrevivalcentre.co.za</a></li>
+                        <li class="accreditation">Accreditation: SDP070223070938</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 On The Mountain Revival Centre. All rights reserved.</p>
+                <p>SAQA Accredited | ACRP Registered | NQF Level 5</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

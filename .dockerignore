@@ -1,0 +1,8 @@
+.git
+.gitignore
+*.md
+README.md
+docker-compose.yml
+Dockerfile
+*.Zone.Identifier
+.DS_Store
