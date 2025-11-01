@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: mountain-revival-centre
+    container_name: on-the-mountain-revival-centre
     ports:
       - "80"
     restart: unless-stopped
