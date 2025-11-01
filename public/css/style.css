@@ -167,7 +167,7 @@ a {
     position: relative;
     height: 600px;
     background: linear-gradient(135deg, var(--dark-teal) 0%, var(--navy-blue) 100%);
-    background-image: url('../ministryadvert3.jpg');
+    background-image: url('../images/biblecollegestudents.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -875,6 +875,63 @@ a {
 }
 
 /* ========================================
+   Photo Gallery
+======================================== */
+.photo-gallery {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    aspect-ratio: 4/3;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    padding: var(--spacing-md);
+    color: var(--white);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* ========================================
    Enrollment Contact Box
 ======================================== */
 .enrollment-contact {
@@ -995,6 +1052,10 @@ a {
 
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
